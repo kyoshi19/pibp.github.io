@@ -1,0 +1,79 @@
+@include font-face("GothicRegular", "../../fonts/GOTHIC",null,null,ttf);
+@include font-face("Monterey", "../../fonts/monterey/MontereyFLF",null,null,ttf);
+@include font-face("Titillium", "../../fonts/titillium-web/TitilliumWeb-Regular",null,null,ttf);
+@include font-face("consola", "../../fonts/inconsolata/Inconsolata-Regular",null,null,ttf);
+
+h1,h2,h3,
+.h1,.h2,.h3{
+  font-weight: bold !important;
+  color: $black;
+  &.white{
+    color: $white !important;
+  }
+}
+
+h4,h5,h6,
+.h4,.h5,.h6{
+  font-weight: normal !important;
+  color: $black;
+  &.white{
+    color: $white !important;
+  }
+}
+
+.name-and-slogan {
+  margin-top: 30px;
+  margin-left: 8px;
+}
+.site-slogan {
+  font-family: "consola";
+  font-size: 14px;
+  a {
+    color: $black;
+  }
+}
+
+.site-name {
+  font-family: "consola";
+  font-weight: normal;
+  font-size: 24px;
+  margin: 0;
+  line-height: 1.3em;
+}
+
+.site-title{
+  font-family: "consola";
+}
+
+.message-result{
+  color: $skyblue;
+}
+.mensaje-error{
+  color: $red;
+  font-size: 12px;
+}
+
+.title-text{
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.text-end{
+  text-align: end;
+}
+
+.text-start{
+  text-align: start;
+}
+
+.viewPassword{
+  
+  &::before {
+    font-size: large;
+    color:$main-color;
+  }
+}
+
+.text-muted {
+  color: $gray !important;
+}

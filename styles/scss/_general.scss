@@ -1,0 +1,50 @@
+body {
+  height: fit-content;
+}
+
+.header-top {
+  background-color: rgb(133, 133, 133);
+  color: #FFFF;
+
+  a {
+    color: $white !important;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.header-bottom {
+  align-items: center !important;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+  text-align: center;
+  background-color: $white;
+}
+
+.header-menu {
+  transition: all 0.06s;
+  padding: 0.5rem;
+
+  &:hover {
+    border-bottom: 2px solid #0059a9 !important;
+    cursor: pointer;
+  }
+}
+
+.header-menu-active {
+  padding: 0.5rem;
+  border-bottom: 2px solid #0059a9 !important;
+  cursor: pointer;
+}
+
+.accordion-button {
+  div {
+    &.row {
+      width: 98%;
+    }
+  }
+
+}

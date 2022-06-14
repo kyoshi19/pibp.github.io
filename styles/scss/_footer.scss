@@ -1,0 +1,19 @@
+footer{
+  background-color: $footer-background;
+  height: 120px;
+  padding: 12px;
+}
+.footer-guia{
+  font-size: 14px;
+}
+
+.footer-info{
+  color: $black;
+}
+
+.footer-interest{
+  text-align: right;
+  a{
+    color:$black !important;
+  }
+}
