@@ -20,24 +20,49 @@
 
 }
 
-.index-image {
-  background-image: url("../../src/img/VS20-DotCom-Header.gif");
+.image-box {
+  background-attachment: fixed;
   background-size: cover;
   min-height: 300px;
   text-align: center;
   padding: 100px;
 
   div {
-
-    color: $white !important;
+    color: $white;
     font-size: 2.5rem;
     font-weight: 700;
+    padding: 0%;
+    transition: all 0.5s;
 
+    &.info-item {
+      white-space: nowrap;
+      overflow: hidden;
+      width: 49%;
+
+      &.hiden {
+        width: 0%;
+      }
+
+      a:hover {
+        cursor: pointer;
+      }
+
+    }
   }
+
+  &.index-image {
+    background-image: url("../../src/img/VS20-DotCom-Header.gif");
+  }
+
+  &.schedule-image {
+    padding: 50px;
+    background-image: url("../../src/img/grunge-paint-background.png");
+  }
+
 }
 
-.card{
-  img{
+.card {
+  img {
     max-height: 100px;
     max-width: 200px;
   }

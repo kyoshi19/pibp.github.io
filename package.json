@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "@uirouter/angularjs": "^1.0.30",
+    "angular-media-player": "^0.5.8",
     "angular-modal-service": "^0.15.6",
     "angular-sanitize": "^1.8.3",
     "bootstrap": "^5.2.0-beta1",

@@ -251,17 +251,37 @@ body {
   margin-top: 42px;
 }
 
-.index-image {
-  background-image: url("../../src/img/VS20-DotCom-Header.gif");
+.image-box {
+  background-attachment: fixed;
   background-size: cover;
   min-height: 300px;
   text-align: center;
   padding: 100px;
 }
-.index-image div {
-  color: #ffffff !important;
+.image-box div {
+  color: #ffffff;
   font-size: 2.5rem;
   font-weight: 700;
+  padding: 0%;
+  transition: all 0.5s;
+}
+.image-box div.info-item {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 49%;
+}
+.image-box div.info-item.hiden {
+  width: 0%;
+}
+.image-box div.info-item a:hover {
+  cursor: pointer;
+}
+.image-box.index-image {
+  background-image: url("../../src/img/VS20-DotCom-Header.gif");
+}
+.image-box.schedule-image {
+  padding: 50px;
+  background-image: url("../../src/img/grunge-paint-background.png");
 }
 
 .card img {
