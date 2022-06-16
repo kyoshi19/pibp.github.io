@@ -458,4 +458,8 @@ h4.white, h5.white, h6.white,
   color: #586770 !important;
 }
 
+.audio-player {
+  background-image: url("../../src/img/audioPlayerFondo.mp4");
+}
+
 /*# sourceMappingURL=styles.css.map */

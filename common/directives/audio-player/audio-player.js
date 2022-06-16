@@ -2,7 +2,7 @@
   'use strict';
 
   //  index page directive
-  function audioPlayer($log) {
+  function audioPlayer($log, ngAudio) {
 
     var directive = {
       restrict: 'E',
@@ -20,7 +20,6 @@
 
       /* --> VALUES <-- */
 
-      scope.player = {};
 
       /* --> METHODS <-- */
 
@@ -33,8 +32,15 @@
         scope.audioControl;
       }
 
+      function initAudio() {
+        scope.audio = ngAudio.load("https://listen.181fm.com/181-90salt_128k.mp3");
+        scope.audio.play();
+      }
+
       function setup() {
        
+        initAudio();
+
         $log.debug(scope);
 
         $log.debug('[audioPlayerDirective] is ready...');
@@ -49,7 +55,8 @@
   /* --> CONFIGURATION <-- */
 
   audioPlayer.$inject = [
-    '$log'
+    '$log',
+    'ngAudio'
   ];
 
   /* --> MODULE <-- */

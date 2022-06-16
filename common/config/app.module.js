@@ -25,6 +25,7 @@
     'pascalprecht.translate',
     'ngStorage',
     'angularModalService',
+    'ngAudio'
 
   ])
 
