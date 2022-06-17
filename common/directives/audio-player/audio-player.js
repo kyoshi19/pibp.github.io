@@ -24,21 +24,36 @@
       /* --> METHODS <-- */
 
       scope.togglePlay = function() {
+
         if (scope.audio.paused) {
           scope.audio.play();
-        } else{
+        } else {
           scope.audio.pause();
         }
-        scope.audioControl;
+
+      }
+
+      scope.getVolumeIcon = function() {
+        if (scope.audio.volume == 0) {
+          return 'fa-volume-xmark'
+        }
+        if (scope.audio.volume <= 0.5) {
+          return 'fa-volume-low'
+        }
+        return 'fa-volume-high'
+      }
+
+      scope.getProgressPercentage = function(){
+        return {width:((scope.audio.currentTime * 100) / scope.audio.duration) +'%'};
       }
 
       function initAudio() {
-        scope.audio = ngAudio.load("https://listen.181fm.com/181-90salt_128k.mp3");
-        scope.audio.play();
+        scope.audio = ngAudio.load("src/audio/SoundHelix-Song-2.mp3");
+        scope.audio.setVolume(1);
       }
 
       function setup() {
-       
+
         initAudio();
 
         $log.debug(scope);

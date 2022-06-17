@@ -1,10 +1,24 @@
-<div class="audio-player">
-  <div style='position:relative; padding-bottom:calc(56.25% + 44px)'>
-    <iframe src='https://gfycat.com/ifr/AridDefinitiveChuckwalla' frameborder='0' scrolling='no'
-      width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe>
+<div class="row audio-player my-7">
+  <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12 mt-5 mb-4">
+      <div class="d-flex justify-content-center">
+        <img src="src/img/radiobautista.jpg"
+          alt="logo radio">
+      </div>
+      <div class="audio-controls">
+
+        <span ng-click="togglePlay()"><em class="fa-solid" ng-class="audio.paused ? 'fa-circle-play':'fa-circle-pause'"></em></span>
+
+        <span class="progress mx-1 w-50">
+          <div class="progress-bar" role="progressbar" ng-style="getProgressPercentage()" aria-valuenow="{{audio.currentTime}}" aria-valuemin="0" aria-valuemax="{{audio.duration}}"></div>
+        </span>
+
+        <span><em class="fa-solid volume-icon" ng-class="getVolumeIcon()"></em></span>
+
+        <span class="px-1 w-25">
+          <input ng-model ="audio.volume" type="range" class="form-range" min="0" max="1" step="0.01" id="audioVolume">
+        </span>
+      </div>
+   
+
   </div>
-  <p>
-    <a href="https://gfycat.com/ariddefinitivechuckwalla">via Gfycat</a>
-  </p>
-  <img src="src/img/radiobautista.jpg" alt="">
 </div>

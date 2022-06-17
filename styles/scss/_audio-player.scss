@@ -1,3 +1,22 @@
-.audio-player{
-  background-image: url("../../src/img/audioPlayerFondo.mp4"); 
+.audio-player {
+  background-image: url("../../src/img/fondonegro.jpg");
+  color: $white;
+  justify-content: center !important;
+
+  img {
+    width: 56%;
+  }
+
+  .audio-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+  }
+
+  .progress {
+    height: 0.5rem;
+    width: 35% !important;
+  }
+
 }

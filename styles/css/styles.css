@@ -192,6 +192,16 @@ body {
   height: fit-content;
 }
 
+.my-6 {
+  margin-top: 5rem !important;
+  margin-bottom: 5rem !important;
+}
+
+.my-7 {
+  margin-top: 8rem !important;
+  margin-bottom: 8rem !important;
+}
+
 .header-top {
   background-color: #858585;
   color: #FFFF;
@@ -287,6 +297,10 @@ body {
 .card img {
   max-height: 100px;
   max-width: 200px;
+}
+
+.volume-icon {
+  width: 35px;
 }
 
 #loader-content {
@@ -459,7 +473,22 @@ h4.white, h5.white, h6.white,
 }
 
 .audio-player {
-  background-image: url("../../src/img/audioPlayerFondo.mp4");
+  background-image: url("../../src/img/fondonegro.jpg");
+  color: #ffffff;
+  justify-content: center !important;
+}
+.audio-player img {
+  width: 56%;
+}
+.audio-player .audio-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+}
+.audio-player .progress {
+  height: 0.5rem;
+  width: 35% !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
