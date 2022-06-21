@@ -52,33 +52,47 @@
     </div>
     <div class="col-md-5 info-item"
       ng-class="scheduleBoxes.hideMiddleLeftBox ? 'hiden':''">
-      <h4 class="white mb-3">
-        <strong>Únete y ora con nosotros</strong>
-      </h4>
-      <a href="https://us02web.zoom.us/j/83245538297?pwd=QU94OUxITVhRSGhRemxMUXFHM3BRUT09"
-        target="_blank">
-        <img src="src/img/zoom-icon.png"
-          class="w-25"
-          alt="zoom-icon">
-      </a>
-      <h5 class="white mt-2">
-        ID : 833 4553 8297 | Códio : 1DEPMA
-      </h5>
+      <div class="row">
+        <div class="col-md-1 align-items-center d-flex justify-content-end">
+          <span class="fa fa-angle-left pointer" ng-click="hideScheduleBox(1)"></span>
+        </div>
+        <div class="col-md-11">
+          <h4 class="white mb-3">
+            <strong>Únete y ora con nosotros</strong>
+          </h4>
+          <a href="https://us02web.zoom.us/j/83245538297?pwd=QU94OUxITVhRSGhRemxMUXFHM3BRUT09"
+            target="_blank">
+            <img src="src/img/zoom-icon.png"
+              class="w-25"
+              alt="zoom-icon">
+          </a>
+          <h5 class="white mt-2">
+            ID : 833 4553 8297 | Códio : 1DEPMA
+          </h5>
+        </div>
+      </div>
     </div>
     <div class="col-md-5 info-item"
       ng-class="scheduleBoxes.hideMiddleRightBox ? 'hiden':''">
-      <h4 class="white">
-        <strong>¡SUSCRÍBETE!</strong>
-      </h4>
-      <a href="https://www.youtube.com/channel/UCYufUQeVRxZZcDcnaBX1R1A"
-        target="_blank">
-        <img src="src/img/YouTube-icon.png"
-          class="w-25"
-          alt="youtube-icon">
-      </a>
-      <h5 class="white mt-2">
-        Primera Iglesia Bautista de Panamá
-      </h5>
+      <div class="row">
+        <div class="col-md-11">
+          <h4 class="white">
+            <strong>¡SUSCRÍBETE!</strong>
+          </h4>
+          <a href="https://www.youtube.com/channel/UCYufUQeVRxZZcDcnaBX1R1A"
+            target="_blank">
+            <img src="src/img/YouTube-icon.png"
+              class="w-25"
+              alt="youtube-icon">
+          </a>
+          <h5 class="white mt-2">
+            Primera Iglesia Bautista de Panamá
+          </h5>
+        </div>
+        <div class="col-md-1 align-items-center d-flex justify-content-start">
+          <span class="fa fa-angle-right pointer" ng-click="hideScheduleBox(0)"></span>
+        </div>
+      </div>
     </div>
     <div class="col-md-5 border-start info-item"
       ng-class="scheduleBoxes.hideRightBox ? 'hiden':''">
@@ -154,5 +168,7 @@
   <!-- Reproductor -->
   <audio-player>
   </audio-player>
+
+  <!-- Ofrenda -->
 
 </div>

@@ -2,19 +2,27 @@ body {
   height: fit-content;
 }
 
-.my-6{
-  margin-top: 5rem!important;
-  margin-bottom: 5rem!important;
+.pointer{
+  cursor: pointer;
 }
 
-.my-7{
-  margin-top: 8rem!important;
-  margin-bottom: 8rem!important;
+.my-6 {
+  margin-top: 5rem !important;
+  margin-bottom: 5rem !important;
+}
+
+.my-7 {
+  margin-top: 8rem !important;
+  margin-bottom: 8rem !important;
 }
 
 .header-top {
   background-color: rgb(133, 133, 133);
   color: #FFFF;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
 
   a {
     color: $white !important;

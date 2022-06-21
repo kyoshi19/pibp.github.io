@@ -48,7 +48,7 @@
       }
 
       function initAudio() {
-        scope.audio = ngAudio.load("src/audio/SoundHelix-Song-2.mp3");
+        scope.audio = ngAudio.load("https://shoutcast.tmcreativos.com/proxy/rbautista?mp=/stream");
         scope.audio.setVolume(1);
       }
 

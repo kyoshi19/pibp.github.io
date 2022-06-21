@@ -169,27 +169,27 @@
 
 footer {
   background-color: #88b5de;
-  height: 120px;
+  font-size: 16px;
   padding: 12px;
 }
-
-.footer-guia {
-  font-size: 14px;
+footer a {
+  color: #000 !important;
+  text-decoration: none;
 }
-
-.footer-info {
-  color: #000;
+footer a:hover {
+  text-decoration: underline;
 }
 
 .footer-interest {
   text-align: right;
 }
-.footer-interest a {
-  color: #000 !important;
-}
 
 body {
   height: fit-content;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .my-6 {
@@ -205,6 +205,10 @@ body {
 .header-top {
   background-color: #858585;
   color: #FFFF;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
 }
 .header-top a {
   color: #ffffff !important;
@@ -244,6 +248,11 @@ body {
 .header-logo {
   height: 60px;
   cursor: pointer;
+}
+
+.footer-logo {
+  cursor: pointer;
+  height: 128px;
 }
 
 .building {
