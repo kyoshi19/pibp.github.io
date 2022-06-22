@@ -1,93 +1,39 @@
 <div class="container-fluid sticky-top">
 
-  <div class="row header-top text-center">
+  <div class="navbar navbar-expand-md header row">
+    <!-- BOTON COLAPSABLE -->
 
-    <div class="col-sm-12 col-lg-4 col-xl-3">
-      <a href="https://goo.gl/maps/62FkMjtxbj5BVZLn6"
-        target="_blank"><span class="fa fa-map-marker-alt"></span>
-        Ave. Cuba y Callle 27 Rep. de Panamá
-      </a>
-    </div>
+    <button class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarToggler"
+      aria-controls="navbarToggler"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <div class="col-sm-6 col-md-4 col-lg-2">
-      <a href="tel:+5072251782">
-        <span class="fa fa-phone"></span>
-        +507 225-1782
-      </a href="">
-    </div>
+    <div class="collapse navbar-collapse justify-content-between"
+      id="navbarToggler">
 
-    <div class="col-sm-6 col-md-4 col-xl-3">
-
-      <a href="mailto:info@bautistadepanama.org">
-        <span class="fa fa-mail-bulk"></span>
-        info@bautistadepanama.org
-      </a>
-    </div>
-
-    <div class="col-5 col-sm-4 col-xl-2 fs-5">
-      <div class="row text-center">
-        <div class="col">
-          <a class="fa-brands fa-twitter"
-            href="https://twitter.com/bautistapanama"
-            target="_blank"></a>
-        </div>
-        <div class="col">
-          <a class="fa-brands fa-instagram"
-            href="https://www.instagram.com/ctr_180/"
-            target="_blank"></a>
-        </div>
-        <div class="col">
-          <a class="fa-brands fa-facebook"
-            href="https://www.facebook.com/PrimeraIglesiaBautistaDePanama/"
-            target="_blank"></a>
-        </div>
-        <div class="col">
-          <a class="fa-brands fa-youtube"
-            href="https://www.youtube.com/channel/UCYufUQeVRxZZcDcnaBX1R1A"
-            target="_blank"></a>
-        </div>
+      <!-- LOGO -->
+      <div class="navbar-brand"
+        ng-click="mctrl.gotoState('index')">
+        <img class="header-logo"
+          src="src/img/logo.png">
+        </img>
       </div>
-    </div>
 
-  </div>
+      <!-- ELEMENTOS DEL MENÚ -->
+      <ul class="navbar-nav">
+        <li ng-repeat="item in ('menuOptions' | bgValue) track by $index"
+          class="nav-item">
+          <div ng-class="mctrl.getMenuClass(item.url)"
+            aria-current="page"
+            ng-click="mctrl.gotoState(item.url)">{{item.title}}</div>
+        </li>
 
-  <div class="navbar navbar-expand-md header-bottom row">
-    <div class="container-fluid">
-
-      <!-- BOTON COLAPSABLE -->
-
-      <button class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarToggler"
-        aria-controls="navbarToggler"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-center"
-        id="navbarToggler">
-
-        <!-- LOGO -->
-        <div class="navbar-brand"
-          ng-click="mctrl.gotoState('index')">
-          <img class="header-logo"
-            src="src/img/logo.png">
-          </img>
-        </div>
-
-        <!-- ELEMENTOS DEL MENÚ -->
-        <ul class="navbar-nav">
-          <li ng-repeat="item in ('menuOptions' | bgValue) track by $index"
-            class="nav-item">
-            <div ng-class="mctrl.getMenuClass(item.url)"
-              aria-current="page"
-              ng-click="mctrl.gotoState(item.url)">{{item.title}}</div>
-          </li>
-
-        </ul>
-      </div>
+      </ul>
     </div>
   </div>
 

@@ -5,7 +5,8 @@
 
 .footer-logo{
   cursor: pointer;
-  height: 128px;
+  height: 220px;
+  margin-left: 4rem;
 }
 
 .building {
@@ -28,7 +29,7 @@
 .image-box {
   background-attachment: fixed;
   background-size: cover;
-  min-height: 300px;
+  min-height: 500px;
   text-align: center;
   padding: 100px;
 
@@ -62,6 +63,7 @@
   &.schedule-image {
     padding: 50px;
     background-image: url("../../src/img/grunge-paint-background.png");
+    min-height: 300px !important;
   }
 
 }

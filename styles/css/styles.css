@@ -25,7 +25,7 @@
   font-size: 24px;
 }
 .alert-success .alert-link {
-  color: #4e2604;
+  color: #0058a9;
   padding-left: 20px;
   text-align: left;
 }
@@ -50,7 +50,7 @@
   font-size: 24px;
 }
 .alert-info .alert-link {
-  color: #4e2604;
+  color: #0058a9;
   padding-left: 20px;
   text-align: left;
 }
@@ -75,7 +75,7 @@
   font-size: 24px;
 }
 .alert-warning .alert-link {
-  color: #4e2604;
+  color: #0058a9;
   padding-left: 20px;
   text-align: left;
 }
@@ -100,7 +100,7 @@
   font-size: 24px;
 }
 .alert-danger .alert-link {
-  color: #4e2604;
+  color: #0058a9;
   padding-left: 20px;
   text-align: left;
 }
@@ -136,7 +136,7 @@
 }
 
 .document-title {
-  border: #4e2604;
+  border: #0058a9;
   border-bottom: solid;
   border-width: 1px;
 }
@@ -167,14 +167,41 @@
   transition: background-color linear 0.2s;
 }
 
+.header {
+  align-items: center !important;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.header-menu {
+  transition: all 0.06s;
+  padding: 0.5rem;
+}
+.header-menu:hover {
+  border-bottom: 2px solid #0059a9 !important;
+  cursor: pointer;
+}
+
+.header-menu-active {
+  padding: 0.5rem;
+  border-bottom: 2px solid #0059a9 !important;
+  cursor: pointer;
+}
+
 footer {
-  background-color: #88b5de;
+  background-color: #000000;
   font-size: 16px;
   padding: 12px;
+  color: white;
+}
+footer span.fa {
+  width: 20px;
 }
 footer a {
-  color: #000 !important;
   text-decoration: none;
+  color: white;
 }
 footer a:hover {
   text-decoration: underline;
@@ -202,47 +229,12 @@ body {
   margin-bottom: 8rem !important;
 }
 
-.header-top {
-  background-color: #858585;
-  color: #FFFF;
-  align-items: center;
-  justify-content: center;
-  padding-top: 0.5rem !important;
-  padding-bottom: 0.5rem !important;
-}
-.header-top a {
-  color: #ffffff !important;
-  text-decoration: none;
-}
-.header-top a:hover {
-  text-decoration: underline;
-}
-
-.header-bottom {
-  align-items: center !important;
-  padding-top: 0.25rem !important;
-  padding-bottom: 0.25rem !important;
-  text-align: center;
-  background-color: #ffffff;
-}
-
-.header-menu {
-  transition: all 0.06s;
-  padding: 0.5rem;
-}
-.header-menu:hover {
-  border-bottom: 2px solid #0059a9 !important;
-  cursor: pointer;
-}
-
-.header-menu-active {
-  padding: 0.5rem;
-  border-bottom: 2px solid #0059a9 !important;
-  cursor: pointer;
-}
-
 .accordion-button div.row {
   width: 98%;
+}
+
+.brand-text {
+  color: #0058a9 !important;
 }
 
 .header-logo {
@@ -252,7 +244,8 @@ body {
 
 .footer-logo {
   cursor: pointer;
-  height: 128px;
+  height: 220px;
+  margin-left: 4rem;
 }
 
 .building {
@@ -266,14 +259,14 @@ body {
   margin-left: -10px;
 }
 .input-icon i {
-  color: #4e2604;
+  color: #0058a9;
   margin-top: 42px;
 }
 
 .image-box {
   background-attachment: fixed;
   background-size: cover;
-  min-height: 300px;
+  min-height: 500px;
   text-align: center;
   padding: 100px;
 }
@@ -301,6 +294,7 @@ body {
 .image-box.schedule-image {
   padding: 50px;
   background-image: url("../../src/img/grunge-paint-background.png");
+  min-height: 300px !important;
 }
 
 .card img {
@@ -474,7 +468,7 @@ h4.white, h5.white, h6.white,
 
 .viewPassword::before {
   font-size: large;
-  color: #4e2604;
+  color: #0058a9;
 }
 
 .text-muted {

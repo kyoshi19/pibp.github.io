@@ -1,20 +1,27 @@
-footer{
+footer {
   background-color: $footer-background;
   font-size: 16px;
   padding: 12px;
-  a{
-    color:$black !important;
+  color: white;
+
+  span{
+    &.fa{
+      width: 20px;
+    }
+  }
+
+  a {
     text-decoration: none;
-    &:hover{
+    color: white;
+
+    &:hover {
       text-decoration: underline;
     }
   }
 }
 
-.footer-info{  
- 
-}
+.footer-info {}
 
-.footer-interest{
+.footer-interest {
   text-align: right;
 }
