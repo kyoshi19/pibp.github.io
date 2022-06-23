@@ -10,7 +10,7 @@ config.$inject= [
 var EStranslate = {
 
   // TITULOS PRINCIPALES
-  'global.main.title'               : 'Enfocados chordpro application',
+  'global.main.title'               : 'Primera Iglesia Butista de Panamá',
   'global.song.edit'                : 'Editar canción',
   'global.song.title'               : 'Título',
   'global.song.artist'              : 'Artista',
