@@ -54,7 +54,7 @@
         content: "El pastor, maestro y autor Adrian Rogers ha presentado a personas de todo el mundo el amor de Jesucristo, y ha impactado un número incontable de vidas al presentar una verdad bíblica profunda."
       },
       {
-        name: "Momento Decisivo",
+        name: "Momento Desicivo",
         autor: "David Jeremiah",
         schedule: "lunes a viernes 3:00pm",
         image:"src/img/radio/momentodecisivo.png",

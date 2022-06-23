@@ -49,7 +49,7 @@
 
       function initAudio() {
         scope.audio = ngAudio.load("https://shoutcast.tmcreativos.com/proxy/rbautista?mp=/stream");
-        scope.audio.setVolume(1);
+        scope.audio.setVolume(0.51);
       }
 
       function setup() {
