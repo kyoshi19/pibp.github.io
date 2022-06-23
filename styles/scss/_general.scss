@@ -35,26 +35,26 @@ body {
 
   .banking-info {
 
-    .row {
-      position: relative;
+    .bank-image {
+      transition: all 0.4s;
+      max-width: 16rem;
     }
 
     .account-info {
-      transition: all 0.6s;
-      position: absolute;
-      background-color: rgba(255, 255, 255, 0.6);
-      bottom: 0%;
-      max-height: 0%;
+      transition: all 0.4s;
+      background-color: rgba(255, 255, 255, 1);
       overflow: hidden;
-      border-radius: 15px;
-      border-color: black;
+      border-radius: 5px;
+      height: 0rem;
     }
 
     &:hover {
       .account-info {
-        border: solid;
-        border-width: thin;
-        max-height: 38%;
+        height: 6rem;
+      }
+
+      .bank-image {
+        max-width: 10rem;
       }
     }
   }

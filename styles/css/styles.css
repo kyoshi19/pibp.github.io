@@ -241,23 +241,22 @@ body {
   background: url(../../src/img/fondo-griz.jpg);
   min-height: fit-content !important;
 }
-.offerings-section .banking-info .row {
-  position: relative;
+.offerings-section .banking-info .bank-image {
+  transition: all 0.4s;
+  max-width: 16rem;
 }
 .offerings-section .banking-info .account-info {
-  transition: all 0.6s;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.6);
-  bottom: 0%;
-  max-height: 0%;
+  transition: all 0.4s;
+  background-color: white;
   overflow: hidden;
-  border-radius: 15px;
-  border-color: black;
+  border-radius: 5px;
+  height: 0rem;
 }
 .offerings-section .banking-info:hover .account-info {
-  border: solid;
-  border-width: thin;
-  max-height: 38%;
+  height: 6rem;
+}
+.offerings-section .banking-info:hover .bank-image {
+  max-width: 10rem;
 }
 
 .header-logo {
@@ -327,10 +326,6 @@ body {
 
 .volume-icon {
   width: 35px;
-}
-
-.bank-image {
-  max-width: 100%;
 }
 
 #loader-content {
