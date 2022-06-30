@@ -32,11 +32,11 @@
       scope.hideScheduleBox = function(boxIndex) {
 
         if (boxIndex) {
-          scope.scheduleBoxes.hideRightBox = !scope.scheduleBoxes.hideRightBox;
+          scope.scheduleBoxes.hideLeftBox = !scope.scheduleBoxes.hideLeftBox;
           scope.scheduleBoxes.hideMiddleLeftBox = !scope.scheduleBoxes.hideMiddleLeftBox;
 
         } else {
-          scope.scheduleBoxes.hideLeftBox = !scope.scheduleBoxes.hideLeftBox;
+          scope.scheduleBoxes.hideRightBox = !scope.scheduleBoxes.hideRightBox;
           scope.scheduleBoxes.hideMiddleRightBox = !scope.scheduleBoxes.hideMiddleRightBox;
         }
 

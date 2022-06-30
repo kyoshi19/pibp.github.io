@@ -31,7 +31,7 @@
   background-size: cover;
   min-height: 500px;
   text-align: center;
-  padding: 100px;
+  padding: 15%;
 
   div {
     color: $white;
@@ -43,7 +43,6 @@
     &.info-item {
       white-space: nowrap;
       overflow: hidden;
-      width: 49%;
 
       &.hiden {
         width: 0%;
@@ -61,7 +60,7 @@
   }
 
   &.schedule-image {
-    padding: 50px;
+    padding: 0%;
     background-image: url("../../src/img/grunge-paint-background.png");
     min-height: 300px !important;
   }

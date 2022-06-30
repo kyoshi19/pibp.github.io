@@ -290,7 +290,7 @@ body {
   background-size: cover;
   min-height: 500px;
   text-align: center;
-  padding: 100px;
+  padding: 15%;
 }
 .image-box div {
   color: #ffffff;
@@ -302,7 +302,6 @@ body {
 .image-box div.info-item {
   white-space: nowrap;
   overflow: hidden;
-  width: 49%;
 }
 .image-box div.info-item.hiden {
   width: 0%;
@@ -314,7 +313,7 @@ body {
   background-image: url("../../src/img/VS20-DotCom-Header.gif");
 }
 .image-box.schedule-image {
-  padding: 50px;
+  padding: 0%;
   background-image: url("../../src/img/grunge-paint-background.png");
   min-height: 300px !important;
 }

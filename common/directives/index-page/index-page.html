@@ -1,13 +1,13 @@
 <div class="container-fluid">
 
   <!-- Fondo de bienvenida -->
-  <div class="row image-box index-image justify-content-center">
-    <div class="col-md-12">
+  <div class="row image-box index-image">
+    <div class="col-md-12 pt-5 pt-md-0">
       <h1 class="white">
         Primera Iglesia Bautista de Panamá
       </h1>
     </div>
-    <div class="col-md-6 pt-3">
+    <div class="col-md-12">
       <h5 class="white">
         Bienaventurada la nación cuyo Dios es Jehová,
         El pueblo que él escogió como heredad para sí.
@@ -29,8 +29,8 @@
   </div>
 
   <!-- Horario y siguenos -->
-  <div class="row image-box schedule-image my-7">
-    <div class="col-md-5 border-end info-item"
+  <div class="row image-box schedule-image align-items-center my-7">
+    <div class="col-sm-12 col-md-6 info-item"
       ng-class="scheduleBoxes.hideLeftBox ? 'hiden':''">
       <div>
         <h3 class="white">Culto de oración</h3>
@@ -45,12 +45,12 @@
           7:00pm - 8:00pm
         </h4>
       </div>
-      <h5 class="white mt-5">
+      <h5 class="white mt-md-5 mt-sm-2">
         <a ng-click="hideScheduleBox(1)"
           class="link-light">Más información</a>
       </h5>
     </div>
-    <div class="col-md-5 info-item"
+    <div class="col-sm-12 col-md-6 info-item"
       ng-class="scheduleBoxes.hideMiddleLeftBox ? 'hiden':''">
       <div class="row">
         <div class="col-md-1 align-items-center d-flex justify-content-end">
@@ -73,7 +73,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-5 info-item"
+    <div class="col-sm-12 col-md-6 info-item"
       ng-class="scheduleBoxes.hideMiddleRightBox ? 'hiden':''">
       <div class="row">
         <div class="col-md-11">
@@ -96,7 +96,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-5 border-start info-item"
+    <div class="col-sm-12 col-md-6 info-item"
       ng-class="scheduleBoxes.hideRightBox ? 'hiden':''">
       <div>
         <h3 class="white">Culto de adoración</h3>
@@ -111,7 +111,7 @@
           9:00am - 11:30am
         </h4>
       </div>
-      <h5 class="white mt-5"><a ng-click="hideScheduleBox(0)"
+      <h5 class="white  mt-md-5 mt-sm-2"><a ng-click="hideScheduleBox(0)"
           class="link-light">Más información</a></h5>
     </div>
   </div>
