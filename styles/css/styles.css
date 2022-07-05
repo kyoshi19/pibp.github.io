@@ -239,11 +239,14 @@ body {
 
 .offerings-section {
   background: url(../../src/img/fondo-griz.jpg);
-  min-height: fit-content !important;
+  min-height: 19rem !important;
 }
 .offerings-section .banking-info .bank-image {
   transition: all 0.4s;
   max-width: 16rem;
+}
+.offerings-section .banking-info .bank-image.mobile {
+  max-width: 8rem;
 }
 .offerings-section .banking-info .account-info {
   transition: all 0.4s;
@@ -255,8 +258,14 @@ body {
 .offerings-section .banking-info:hover .account-info {
   height: 6rem;
 }
+.offerings-section .banking-info:hover .account-info.mobile {
+  height: 4rem;
+}
 .offerings-section .banking-info:hover .bank-image {
   max-width: 10rem;
+}
+.offerings-section .banking-info:hover .bank-image.mobile {
+  max-width: 4rem;
 }
 
 .header-logo {
@@ -288,6 +297,7 @@ body {
 .image-box {
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
   min-height: 500px;
   text-align: center;
   padding: 15%;
@@ -296,7 +306,6 @@ body {
   color: #ffffff;
   font-size: 2.5rem;
   font-weight: 700;
-  padding: 0%;
   transition: all 0.5s;
 }
 .image-box div.info-item {
@@ -305,15 +314,17 @@ body {
 }
 .image-box div.info-item.hiden {
   width: 0%;
+  padding: 0%;
 }
 .image-box div.info-item a:hover {
   cursor: pointer;
 }
 .image-box.index-image {
-  background-image: url("../../src/img/VS20-DotCom-Header.gif");
+  background-image: url("../../src/img/church-video.gif");
+  padding: 5%;
 }
 .image-box.schedule-image {
-  padding: 0%;
+  padding: 5%;
   background-image: url("../../src/img/grunge-paint-background.png");
   min-height: 300px !important;
 }

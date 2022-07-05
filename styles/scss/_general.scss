@@ -31,13 +31,17 @@ body {
 
 .offerings-section {
   background: url(../../src/img/fondo-griz.jpg);
-  min-height: fit-content !important;
+  min-height: 19rem !important;
 
   .banking-info {
 
     .bank-image {
       transition: all 0.4s;
       max-width: 16rem;
+      
+      &.mobile{
+        max-width: 8rem;
+      }
     }
 
     .account-info {
@@ -46,15 +50,22 @@ body {
       overflow: hidden;
       border-radius: 5px;
       height: 0rem;
+      
     }
 
     &:hover {
       .account-info {
         height: 6rem;
+        &.mobile{
+          height: 4rem;
+        }
       }
 
       .bank-image {
         max-width: 10rem;
+        &.mobile{
+          max-width: 4rem;
+        }
       }
     }
   }

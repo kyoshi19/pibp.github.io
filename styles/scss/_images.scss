@@ -3,7 +3,7 @@
   cursor: pointer;
 }
 
-.footer-logo{
+.footer-logo {
   cursor: pointer;
   height: 220px;
   margin-left: 4rem;
@@ -29,6 +29,7 @@
 .image-box {
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
   min-height: 500px;
   text-align: center;
   padding: 15%;
@@ -37,7 +38,6 @@
     color: $white;
     font-size: 2.5rem;
     font-weight: 700;
-    padding: 0%;
     transition: all 0.5s;
 
     &.info-item {
@@ -46,6 +46,7 @@
 
       &.hiden {
         width: 0%;
+        padding: 0%;
       }
 
       a:hover {
@@ -56,11 +57,13 @@
   }
 
   &.index-image {
-    background-image: url("../../src/img/VS20-DotCom-Header.gif");
+    background-image: url("../../src/img/church-video.gif");
+    padding: 5%;
   }
 
   &.schedule-image {
-    padding: 0%;
+    padding: 5%;
+
     background-image: url("../../src/img/grunge-paint-background.png");
     min-height: 300px !important;
   }
