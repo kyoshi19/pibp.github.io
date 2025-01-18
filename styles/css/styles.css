@@ -331,13 +331,22 @@ body {
 
 .index-image {
   text-align: center;
-  height: 40rem;
   padding: 0%;
+  height: 41vw;
 }
 .index-image .index-text {
   position: relative;
-  margin-top: 12%;
   z-index: 200;
+}
+@media (min-width: 768px) {
+  .index-image .index-text {
+    margin-top: 6%;
+  }
+}
+@media (min-width: 1140px) {
+  .index-image .index-text {
+    margin-top: 12%;
+  }
 }
 .index-image video {
   position: absolute;
