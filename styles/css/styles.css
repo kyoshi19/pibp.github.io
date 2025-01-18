@@ -14,14 +14,14 @@
 
 .alert-success {
   background-color: #dff0d8;
-  border-color: #d6e9c6;
+  border-color: rgb(213.7777777778, 232.9166666667, 197.5833333333);
   color: #3c763d;
 }
 .alert-success hr {
-  border-top-color: #c9e2b3;
+  border-top-color: rgb(200.5555555556, 225.8333333333, 179.1666666667);
 }
 .alert-success .icon {
-  color: #d6e9c6;
+  color: rgb(213.7777777778, 232.9166666667, 197.5833333333);
   font-size: 24px;
 }
 .alert-success .alert-link {
@@ -39,14 +39,14 @@
 
 .alert-info {
   background-color: #d9edf7;
-  border-color: #bce8f1;
+  border-color: rgb(187.5086956522, 231.9108695652, 240.7913043478);
   color: #31708f;
 }
 .alert-info hr {
-  border-top-color: #a6e1ec;
+  border-top-color: rgb(166.4434782609, 224.7043478261, 236.3565217391);
 }
 .alert-info .icon {
-  color: #bce8f1;
+  color: rgb(187.5086956522, 231.9108695652, 240.7913043478);
   font-size: 24px;
 }
 .alert-info .alert-link {
@@ -64,14 +64,14 @@
 
 .alert-warning {
   background-color: #fcf8e3;
-  border-color: #faebcc;
+  border-color: rgb(249.5322580645, 234.6478494624, 203.9677419355);
   color: #8a6d3b;
 }
 .alert-warning hr {
-  border-top-color: #f7e1b5;
+  border-top-color: rgb(247.064516129, 225.4623655914, 180.935483871);
 }
 .alert-warning .icon {
-  color: #faebcc;
+  color: rgb(249.5322580645, 234.6478494624, 203.9677419355);
   font-size: 24px;
 }
 .alert-warning .alert-link {
@@ -89,14 +89,14 @@
 
 .alert-danger {
   background-color: #feedf2;
-  border-color: #fdd5e7;
+  border-color: rgb(252.6578947368, 212.8421052632, 231.1885964912);
   color: #a94442;
 }
 .alert-danger hr {
-  border-top-color: #fbbdda;
+  border-top-color: rgb(251.3157894737, 188.6842105263, 217.5438596491);
 }
 .alert-danger .icon {
-  color: #fdd5e7;
+  color: rgb(252.6578947368, 212.8421052632, 231.1885964912);
   font-size: 24px;
 }
 .alert-danger .alert-link {
@@ -229,6 +229,10 @@ body {
   margin-bottom: 8rem !important;
 }
 
+.w-15 {
+  width: 15% !important;
+}
+
 .accordion-button div.row {
   width: 98%;
 }
@@ -250,7 +254,7 @@ body {
 }
 .offerings-section .banking-info .account-info {
   transition: all 0.4s;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   overflow: hidden;
   border-radius: 5px;
   height: 0rem;
@@ -319,14 +323,26 @@ body {
 .image-box div.info-item a:hover {
   cursor: pointer;
 }
-.image-box.index-image {
-  background-image: url("../../src/img/church-video.gif");
-  padding: 5%;
-}
 .image-box.schedule-image {
   padding: 5%;
   background-image: url("../../src/img/grunge-paint-background.png");
   min-height: 300px !important;
+}
+
+.index-image {
+  text-align: center;
+  height: 40rem;
+  padding: 0%;
+}
+.index-image .index-text {
+  position: relative;
+  margin-top: 12%;
+  z-index: 200;
+}
+.index-image video {
+  position: absolute;
+  padding: 0%;
+  z-index: 0;
 }
 
 .card img {

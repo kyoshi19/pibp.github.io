@@ -48,7 +48,7 @@
       }
 
       function initAudio() {
-        scope.audio = ngAudio.load("https://shoutcast.tmcreativos.com/proxy/rbautista?mp=/stream");
+        scope.audio = ngAudio.load("https://zeno.fm/player/radio-bautista-de-panama");
         scope.audio.setVolume(0.51);
       }
 

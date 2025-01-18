@@ -26,6 +26,7 @@
         hideMiddleRightBox: true,
         hideRightBox: false
       }
+      scope.src = '../../../src/';
 
       /* --> METHODS <-- */
 

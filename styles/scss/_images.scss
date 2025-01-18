@@ -56,11 +56,6 @@
     }
   }
 
-  &.index-image {
-    background-image: url("../../src/img/church-video.gif");
-    padding: 5%;
-  }
-
   &.schedule-image {
     padding: 5%;
 
@@ -68,6 +63,24 @@
     min-height: 300px !important;
   }
 
+}
+
+.index-image {
+  text-align: center;
+  height: 40rem;
+  padding: 0%;
+
+  .index-text{
+    position: relative;
+    margin-top: 12%;
+    z-index: 200;
+  }
+
+  video {
+    position: absolute;
+    padding: 0%;
+    z-index: 0;
+  }
 }
 
 .card {
