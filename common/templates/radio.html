@@ -1,5 +1,51 @@
-<div class="row container-fluid">
-  <div class="col">
-   <h1>RADIO</h1>
+<!-- Reproductor -->
+<div class="row audio-player">
+  <div class="col-md-12 text-center my-6">
+    <div class="col-md-12 text-center mb-4">
+      <h2 class="white">Radio Bautista Internacional</h2>
+    </div>
+    <iframe src="https://zeno.fm/player/radio-bautista-de-panama" width="700" height="250" frameborder="0"
+      scrolling="no"></iframe>
+  </div>
+</div>
+
+<!-- Programas radiales -->
+<div class="row justify-content-center my-5">
+  <div class="col-md-6 text-center">
+    <h3 class="text-secondary mb-4">Escucha programas diarios a través de<br>Radio Batista Online
+    </h3>
+
+    <div class="accordion" id="programsAccordion">
+      <div class="accordion-item" ng-repeat="item in 'programs' | bgValue track by $index">
+        <h2 class="accordion-header" id="heading-{{$index}}">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse-{{$index}}" aria-expanded="false" aria-controls="collapse-{{$index}}">
+            <div class="row">
+              <div class="col-md-8"><strong>{{item.name}} por {{item.autor}}</strong></div>
+              <div class="col-md-4 text-end">{{item.schedule}}</div>
+            </div>
+          </button>
+        </h2>
+        <div id="collapse-{{$index}}" class="accordion-collapse collapse" aria-labelledby="heading-{{$index}}"
+          data-bs-parent="#programsAccordion">
+
+          <div class="accordion-body">
+            <div class="row">
+
+              <div class="col-md-4">
+                <img ng-src="{{item.image}}" alt="{{item.name}}">
+              </div>
+
+              <div class="col-md-8 d-flex align-items-center">
+                <span> {{item.content}}</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>

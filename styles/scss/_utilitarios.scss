@@ -1,0 +1,19 @@
+@function generate-width-classes($start, $end, $step) {
+    $classes: ();
+
+    @for $i from $start through $end {
+        $width: $i * $step;
+        $class: ".w-#{$width}";
+        $classes: append($classes, $class);
+    }
+
+    @return $classes;
+}
+
+$width-classes: generate-width-classes(1, 5, 5);
+
+@each $class in $width-classes {
+    #{$class} {
+        width: #{str-slice($class, 4)} + "%";
+    }
+}

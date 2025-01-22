@@ -43,219 +43,118 @@
   </div>
 
   <!-- Horario y siguenos -->
-  <div class="row image-box schedule-image align-items-center my-7">
+  <div class="row image-box schedule-image my-7">
 
-    <div class="col-sm-12 col-md-6 info-item" ng-class="scheduleBoxes.hideLeftBox ? 'hiden':'border-end'">
-      <div>
-        <h3 class="white">Culto de oración</h3>
-      </div>
-      <div>
-        <h4 class="white">
-          Miércoles
-        </h4>
-      </div>
-      <div>
-        <h4 class="white">
-          7:00pm - 8:00pm
-        </h4>
-      </div>
-      <h5 class="white">
-        <a href="https://us02web.zoom.us/j/83245538297?pwd=QU94OUxITVhRSGhRemxMUXFHM3BRUT09" class="link-light">
-          <img src="src/img/zoom-icon.png" alt="zoom-icon" class="w-25"><br>ID : 833 4553 8297 | Códio : 1DEPMA</a>
-      </h5>
+    <div class="col-sm-12 col-md-6 info-item border-end">
+      <img src="src/img/bible-v.jpg" alt="bible image" class="w-75">
     </div>
 
-    <div class="col-sm-12 col-md-6 info-item" ng-class="scheduleBoxes.hideMiddleLeftBox ? 'hiden':'border-end'">
-      <div class="row">
-        <div class="col-1 align-items-center d-flex justify-content-end">
-          <span class="fa fa-angle-left pointer" ng-click="hideScheduleBox(0)"></span>
-        </div>
-        <div class="col-11 p-2">
-          <h4 class="white mb-3">
-            <strong>Únete y ora con nosotros</strong>
-          </h4>
-          <a href="https://us02web.zoom.us/j/83245538297?pwd=QU94OUxITVhRSGhRemxMUXFHM3BRUT09" target="_blank">
-            <img src="src/img/zoom-icon.png" class="w-25" alt="zoom-icon">
-          </a>
-          <h5 class="white mt-2">
-            ID : 833 4553 8297 | Códio : 1DEPMA
-          </h5>
-        </div>
-      </div>
-    </div>
+    <div class="col-sm-12 col-md-6 pl-4 info-item border-start px-4">
+      <h2 class="white">Reuniones semanales</h2>
 
-    <div class="col-sm-12 col-md-6 info-item" ng-class="scheduleBoxes.hideMiddleRightBox ? 'hiden':'border-start'">
-      <div class="row">
-        <div class="col-11 p-2">
-          <h4 class="white mb-3">
-            <strong>¡SUSCRÍBETE!</strong>
-          </h4>
-          <a href="https://www.youtube.com/channel/UCYufUQeVRxZZcDcnaBX1R1A" target="_blank">
-            <img src="src/img/YouTube-icon.png" class="w-25" alt="youtube-icon">
-          </a>
-          <h5 class="white mt-2">
-            Primera Iglesia Bautista de Panamá
-          </h5>
-        </div>
-        <div class="col-1 align-items-center d-flex justify-content-start">
-          <span class="fa fa-angle-right pointer" ng-click="hideScheduleBox(1)"></span>
-        </div>
-      </div>
-    </div>
+      <div class="row text-lg-start">
 
-    <div class="col-sm-12 col-md-6 info-item" ng-class="scheduleBoxes.hideRightBox ? 'hiden':'border-start'">
-      <div>
-        <h3 class="white">Culto de adoración</h3>
+        <div class="col-md-12">
+          <h4 class="white m-4"> <strong>Domingos</strong></h4>
+          <h6 class="white m-3">
+            Culto de adoración 9:00am - 11:30am
+            <a class="link-light" href="https://www.youtube.com/@Primeraiglesiabautistadepanama/streams"
+              target="_blank">
+              <img src="src/img/YouTube-icon.png" alt="youtube-icon" class="w-5">
+            </a>
+          </h6>
+          <h6 class="white m-3"> Club infantil OANSA 9:00am - 11:30am </h6>
+          <h6 class="white m-3"> Escuela bíblica discipular 12:00md - 1:00pm </h6>
+        </div>
+
+        <div class="col-md-12">
+          <h4 class="white m-4"> <strong>Miércoles</strong></h4>
+          <h6 class="white m-3"> Culto de oración 6:30pm - 08:00am </h6>
+        </div>
+
       </div>
-      <div>
-        <h4 class="white">
-          Domingo
-        </h4>
-      </div>
-      <div>
-        <h4 class="white">
-          9:00am - 11:30am
-        </h4>
-      </div>
-      <h5 class="white">
-        <a class="link-light" href="https://www.youtube.com/channel/UCYufUQeVRxZZcDcnaBX1R1A">
-          <img src="src/img/YouTube-icon.png" alt="youtube-icon" class="w-25"><br>Transmisión en vivo
-        </a>
-      </h5>
     </div>
   </div>
 
-  <!-- Programas radiales -->
-  <div class="row justify-content-center my-7">
-    <div class="col-md-6 text-center">
-      <h3 class="text-secondary mb-4">Escucha programas diarios a través de<br>Radio Batista Online
-      </h3>
+    <!-- Ofrenda -->
+    <div class="row offerings-section image-box justify-content-center px-0 py-2 px-md-5">
+      <div class="col">
 
-      <div class="accordion" id="programsAccordion">
-        <div class="accordion-item" ng-repeat="item in 'programs' | bgValue track by $index">
-          <h2 class="accordion-header" id="heading-{{$index}}">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse-{{$index}}" aria-expanded="false" aria-controls="collapse-{{$index}}">
-              <div class="row">
-                <div class="col-md-8"><strong>{{item.name}} por {{item.autor}}</strong></div>
-                <div class="col-md-4 text-end">{{item.schedule}}</div>
+        <div class="row text-center d-md-none">
+          <div class="col-12">
+            <h3 class="mb-2">Sigue colaborando</h3>
+            <h5 class="mb-2">Puedes hacernos llegar tus diezmos y ofrendas a través de nuestras
+              cuentas bancarias a nombre de Primera Iglesia Bautista de Panamá</h5>
+          </div>
+          <div class="col-6 banking-info">
+
+            <div class="row px-2">
+              <div class="col-md-12">
+                <img class="bank-image mobile" src="src/img/bgeneral.png" alt="logo bgeneral">
               </div>
-            </button>
-          </h2>
-          <div id="collapse-{{$index}}" class="accordion-collapse collapse" aria-labelledby="heading-{{$index}}"
-            data-bs-parent="#programsAccordion">
-
-            <div class="accordion-body">
-              <div class="row">
-
-                <div class="col-md-4">
-                  <img ng-src="{{item.image}}" alt="{{item.name}}">
-                </div>
-
-                <div class="col-md-8 d-flex align-items-center">
-                  <span> {{item.content}}</span>
-                </div>
-
+              <div class="col-md-12 account-info mobile">
+                <h6 class="m-0">Banco General</h6>
+                <h6 class="m-0">Cuenta de Ahorros</h6>
+                <h6 class="m-0">04-21-97-236435-6</h6>
               </div>
             </div>
 
           </div>
-        </div>
-      </div>
+          <div class=" col-6 banking-info">
 
+            <div class="row px-2">
+              <div class="col-md-12">
+                <img class="bank-image mobile" src="src/img/banistmo.png" alt="logo bgeneral">
+              </div>
+              <div class="col-md-12 account-info mobile">
+                <h6 class="m-0">Banistmo</h5>
+                  <h6 class="m-0">Cuenta Corriente</h5>
+                    <h6 class="m-0">0100279935</h5>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="row text-center d-none d-md-flex justify-content-center">
+          <div class="col-3 banking-info">
+
+            <div class="row">
+              <div class="col-md-12">
+                <img class="bank-image" src="src/img/bgeneral.png" alt="logo bgeneral">
+              </div>
+              <div class="col-md-12 account-info">
+                <h5>Banco General</h5>
+                <h5>Cuenta de Ahorros</h5>
+                <h5>04-21-97-236435-6</h5>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-4">
+            <h1 class="my-4">Sigue colaborando</h1>
+            <h4 class="mb-2">Puedes hacernos llegar tus diezmos y ofrendas a través de nuestras
+              cuentas bancarias a nombre de Primera Iglesia Bautista de Panamá</h4>
+          </div>
+          <div class=" col-3 col-md-3 banking-info">
+
+            <div class="row">
+              <div class="col-md-12">
+                <img class="bank-image" src="src/img/banistmo.png" alt="logo bgeneral">
+              </div>
+              <div class="col-md-12 account-info">
+                <h5>Banistmo</h5>
+                <h5>Cuenta Corriente</h5>
+                <h5>0100279935</h5>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
     </div>
+
   </div>
-
-  <!-- Reproductor -->
-  <div class="row audio-player my-5">
-    <div class="col-md-12 text-center my-5">
-      <div class="col-md-12 text-center my-4">
-        <h2 class="white">Radio Bautista Internacional</h2>
-      </div>
-      <iframe src="https://zeno.fm/player/radio-bautista-de-panama" width="700" height="250" frameborder="0"
-        scrolling="no"></iframe>
-    </div>
-  </div>
-
-  <!-- Ofrenda -->
-  <div class="row offerings-section image-box justify-content-center px-0 py-2 px-md-5">
-    <div class="col">
-
-      <div class="row text-center d-md-none">
-        <div class="col-12">
-          <h3 class="mb-2">Sigue colaborando</h3>
-          <h5 class="mb-2">Puedes hacernos llegar tus diezmos y ofrendas a través de nuestras
-            cuentas bancarias a nombre de Primera Iglesia Bautista de Panamá</h5>
-        </div>
-        <div class="col-6 banking-info">
-
-          <div class="row px-2">
-            <div class="col-md-12">
-              <img class="bank-image mobile" src="src/img/bgeneral.png" alt="logo bgeneral">
-            </div>
-            <div class="col-md-12 account-info mobile">
-              <h6 class="m-0">Banco General</h6>
-              <h6 class="m-0">Cuenta de Ahorros</h6>
-              <h6 class="m-0">04-21-97-236435-6</h6>
-            </div>
-          </div>
-
-        </div>
-        <div class=" col-6 banking-info">
-
-          <div class="row px-2">
-            <div class="col-md-12">
-              <img class="bank-image mobile" src="src/img/banistmo.png" alt="logo bgeneral">
-            </div>
-            <div class="col-md-12 account-info mobile">
-              <h6 class="m-0">Banistmo</h5>
-                <h6 class="m-0">Cuenta Corriente</h5>
-                  <h6 class="m-0">0100279935</h5>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-
-      <div class="row text-center d-none d-md-flex justify-content-center">
-        <div class="col-3 banking-info">
-
-          <div class="row">
-            <div class="col-md-12">
-              <img class="bank-image" src="src/img/bgeneral.png" alt="logo bgeneral">
-            </div>
-            <div class="col-md-12 account-info">
-              <h5>Banco General</h5>
-              <h5>Cuenta de Ahorros</h5>
-              <h5>04-21-97-236435-6</h5>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-4">
-          <h1 class="my-4">Sigue colaborando</h1>
-          <h4 class="mb-2">Puedes hacernos llegar tus diezmos y ofrendas a través de nuestras
-            cuentas bancarias a nombre de Primera Iglesia Bautista de Panamá</h4>
-        </div>
-        <div class=" col-3 col-md-3 banking-info">
-
-          <div class="row">
-            <div class="col-md-12">
-              <img class="bank-image" src="src/img/banistmo.png" alt="logo bgeneral">
-            </div>
-            <div class="col-md-12 account-info">
-              <h5>Banistmo</h5>
-              <h5>Cuenta Corriente</h5>
-              <h5>0100279935</h5>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-</div>

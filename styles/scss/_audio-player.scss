@@ -1,3 +1,5 @@
+@use "variables/colores" as *;
+
 .audio-player {
   background-image: url("../../src/img/fondonegro.jpg");
   color: $white;

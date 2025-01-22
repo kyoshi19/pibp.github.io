@@ -1,15 +1,48 @@
+@use 'variables/colores';
+
+@mixin alert-variant($background, $border, $text-color, $link-color) {
+  background-color: $background;
+  border-color: $border;
+  color: $text-color;
+
+  hr {
+    border-top-color: darken($border, 5%);
+  }
+
+  .icon {
+    color: $border;
+    font-size: 24px;
+  }
+
+  .alert-link {
+    color: $link-color;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  p {
+    color: colores.$gray;
+		font-weight: 500;
+  }
+
+	div {
+		font-weight: 500;
+	}
+}
+
+
 .alert-success {
-  @include alert-variant($state-success-bg, $state-success-border, $state-success-text, $main-color);
+  @include alert-variant(colores.$state-success-bg, colores.$state-success-border, colores.$state-success-text, colores.$main-color);
 }
 
 .alert-info {
-  @include alert-variant($state-info-bg, $state-info-border, $state-info-text, $main-color);
+  @include alert-variant(colores.$state-info-bg, colores.$state-info-border, colores.$state-info-text, colores.$main-color);
 }
 
 .alert-warning {
-  @include alert-variant($state-warning-bg, $state-warning-border, $state-warning-text, $main-color);
+  @include alert-variant(colores.$state-warning-bg, colores.$state-warning-border, colores.$state-warning-text, colores.$main-color);
 }
 
 .alert-danger {
-  @include alert-variant($state-danger-bg, $state-danger-border, $state-danger-text, $main-color);
+  @include alert-variant(colores.$state-danger-bg, colores.$state-danger-border, colores.$state-danger-text, colores.$main-color);
 }
