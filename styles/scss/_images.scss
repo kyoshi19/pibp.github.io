@@ -71,6 +71,7 @@
   text-align: center;
   padding: 0%;
   height: 41vw;
+  position: relative;
 
   .index-text{
     position: relative;
@@ -81,12 +82,28 @@
     @media (min-width: 1140px) {
       margin-top: 12%;
     }
+    .index-title {
+      @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+        margin-top: 50px;
+      }
+    }
+    .index-subtitle {
+      @media screen and (max-width: 768px) {
+        font-size: 0.8rem;
+      }
+    }
   }
 
   video {
     position: absolute;
     padding: 0%;
     z-index: 0;
+    overflow-x: hidden;
+    @media screen and (max-width: 768px) {
+      background-color: black;
+      height: 160%;
+    }
   }
 }
 
@@ -99,4 +116,14 @@
 
 .volume-icon {
   width: 35px;
+}
+
+.stream-box{
+  background-image: url("../../src/img/fondonegro.jpg");
+
+
+  iframe{
+    width: 660px;
+    height: 370px;
+  }
 }
