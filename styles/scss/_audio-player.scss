@@ -5,6 +5,17 @@
   color: $white;
   justify-content: center !important;
 
+  iframe {
+    width: 660px;
+    height: 370px;
+    @media screen and (max-width: 768px) {
+      width: auto;
+      height: auto;
+      
+    }
+   
+  }
+
   img {
     width: 56%;
   }

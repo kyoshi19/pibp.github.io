@@ -557,6 +557,16 @@ h4.white, h5.white, h6.white,
   color: #ffffff;
   justify-content: center !important;
 }
+.media-player iframe {
+  width: 660px;
+  height: 370px;
+}
+@media screen and (max-width: 768px) {
+  .media-player iframe {
+    width: auto;
+    height: auto;
+  }
+}
 .media-player img {
   width: 56%;
 }
