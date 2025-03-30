@@ -398,6 +398,17 @@ body {
   height: 370px;
 }
 
+.info-header {
+  background-image: url("../../src/img/wave.png");
+  background-size: 100% 100%;
+  padding: 3%;
+  text-align: right;
+  font-size: 1.5rem;
+}
+.info-header h1 {
+  color: #000c2b;
+}
+
 #loader-content {
   position: fixed;
   top: 0;
@@ -494,6 +505,21 @@ h4, h5, h6,
 h4.white, h5.white, h6.white,
 .h4.white, .h5.white, .h6.white {
   color: #ffffff !important;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .page-title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 576px) {
+  .page-title {
+    font-size: 1rem;
+  }
 }
 
 .name-and-slogan {
