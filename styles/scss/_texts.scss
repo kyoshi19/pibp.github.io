@@ -136,6 +136,13 @@ h4,h5,h6,
   }
 }
 
+.mision-box {
+  background: url(../../src/img/fondonegro2.jpg);
+  background-attachment: fixed;
+  background-color: $black;
+  min-height: 19rem !important;
+}
+
 .text-muted {
   color: $gray !important;
 }
