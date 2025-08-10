@@ -574,11 +574,20 @@ h4.white, h5.white, h6.white,
   color: #0058a9;
 }
 
-.mision-box {
-  background: url(../../src/img/fondonegro2.jpg);
+.black-box {
   background-attachment: fixed;
   background-color: #000;
   min-height: 19rem !important;
+}
+
+.border-item {
+  margin-top: -8px;
+  margin-left: -5px;
+  margin-bottom: auto;
+  border-top: var(--bs-border-width) solid;
+  border-top-width: 0.5em;
+  border-color: #a30000;
+  opacity: 1;
 }
 
 .text-muted {

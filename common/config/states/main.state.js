@@ -19,11 +19,6 @@ function config($stateProvider) {
     templateUrl: 'common/templates/info.html'
   });
 
-  $stateProvider.state('ministerios', {
-    url: '/ministerios',
-    templateUrl: 'common/templates/ministerios.html'
-  });
-
   $stateProvider.state('en-linea', {
     url: '/en-linea',
     templateUrl: 'common/templates/en-linea.html'

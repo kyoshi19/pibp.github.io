@@ -1,10 +1,27 @@
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center my-md-4">
-            <h1 class="text-center">Ministerios</h1>
+
+    <div class="row black-box text-white">
+        <div class="col-12 my-4">
+            <h1 class="text-white text-center mb-4">Nuestros Ministerios</h1>
+            <h5 class="text-white text-center">"Diferentes dones, un mismo cuerpo" (1 Corintios 12:12)</h5>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-            <img src="src/img/ministries.jpg" alt="Ministerios" class="img-responsive center-block"
+
+        <div class="col-12 text-center">
+            <img src="src/img/ministries.png" alt="Ministerios" class="img-responsive center-block"
                 style="width: 75%; height: auto;">
         </div>
+
+        <div class="col-10 offset-1 my-4">
+            <div class="mb-4" ng-repeat="min in ministerios">
+                <h3 class="card-title">{{ min.nombre }}</h3>
+                <hr class="border-item" style="width: {{min.nombre.length*10}}px;">
+                <p class="mb-2 text-muted">{{ min.verso }}</p>
+                <h5 class="text-white">{{ min.descripcion }}</h5>
+                <p ng-if="min.comisiones.length === 0" class="fst-italic">Sin comisiones.</p>
+            </div>
+        </div>
     </div>
+
+</div>
+
+</div>

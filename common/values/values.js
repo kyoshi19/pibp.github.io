@@ -16,10 +16,6 @@
         url: "info"
       },
       {
-        title: "MINISTERIOS",
-        url: "ministerios"
-      },
-      {
         title: "TV EN LINEA",
         url: "en-linea"
       },
