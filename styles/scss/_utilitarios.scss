@@ -17,3 +17,28 @@ $width-classes: generate-width-classes(1, 5, 5);
         width: #{str-slice($class, 4)} + "%";
     }
 }
+@function generate-font-size-classes($start, $end, $step) {
+  $classes: ();
+  $i: $start;
+
+  @while $i <= $end {
+    $size: round($i * 10) / 10; // redondear a 1 decimal
+    $size-str: inspect(round($i * 10)); 
+    $class-name: ".fns-" + $size-str;
+    $classes: append($classes, ($class-name $size));
+    $i: $i + $step;
+  }
+
+  @return $classes;
+}
+
+$font-size-classes: generate-font-size-classes(1, 3, 0.1);
+
+@each $item in $font-size-classes {
+  $class-name: nth($item, 1);
+  $size: nth($item, 2);
+
+  #{$class-name} {
+    font-size: #{$size}rem;
+  }
+}

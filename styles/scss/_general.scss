@@ -78,11 +78,26 @@ body {
       }
 
       .bank-image {
-        max-width: 10rem;
+        max-width: 10rem; 
         &.mobile{
           max-width: 4rem;
         }
       }
     }
   }
+}
+
+.border-item {
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  border-top: var(--bs-border-width) solid;
+  border-top-width: 0.5em;
+  border-color: #a30000;
+  opacity: 1;
+}
+
+.bg-dark-blue {
+  background-color: $main-dark-color !important;
 }
