@@ -2,3 +2,16 @@
 </info-page>
 <ministries-page>
 </ministries-page>
+
+<div class="row py-5 bg-secondary" ng-init="creads = ('creads' | bgValue)">
+  <div class="col-12">
+    <h1 class="mb-4 text-center white">
+      {{creads.title}}
+    </h1>
+  </div>
+  <div class="col-6 py-4 border-bottom" ng-repeat="cread in creads.declarations"
+    ng-class="($index % 2 !== 0) ? 'text-end offset-4': 'offset-2'">
+    <strong class="fns-14">{{cread.title}}</strong>
+    <div class="fns-11">{{cread.content}}</div>
+  </div>
+</div>
