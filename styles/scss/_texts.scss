@@ -5,13 +5,13 @@
 // =============================================================================
 
 @function str-replace($string, $search, $replace: "") {
-	$index: str-index($string, $search);
+  $index: str-index($string, $search);
 
-	@if $index {
-		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
-	}
+  @if $index {
+    @return str-slice($string, 1, $index - 1)+$replace +str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
 
-	@return $string;
+  @return $string;
 }
 
 // =============================================================================
@@ -19,67 +19,79 @@
 // =============================================================================
 
 @mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
-	$src: null;
+  $src: null;
 
-	$extmods: (
-		eot: "?",
-		svg: "#" + str-replace($name, " ", "_")
-	);
+  $extmods: (
+    eot: "?",
+    svg: "#" + str-replace($name, " ", "_")
+  );
 
-	$formats: (
-		otf: "opentype",
-		ttf: "truetype"
-	);
+$formats: (
+  otf: "opentype",
+  ttf: "truetype"
+);
 
-	@each $ext in $exts {
-		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
-		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
-		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
-	}
+@each $ext in $exts {
+  $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+  $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+  $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+}
 
-	@font-face {
-		font-family: quote($name);
-		font-style: $style;
-		font-weight: $weight;
-		src: $src;
-	}
+@font-face {
+  font-family: quote($name);
+  font-style: $style;
+  font-weight: $weight;
+  src: $src;
+}
 }
 
 // =============================================================================
 
-@include font-face("GothicRegular", "../../fonts/GOTHIC",null,null,ttf);
-@include font-face("Monterey", "../../fonts/monterey/MontereyFLF",null,null,ttf);
-@include font-face("Titillium", "../../fonts/titillium-web/TitilliumWeb-Regular",null,null,ttf);
-@include font-face("consola", "../../fonts/inconsolata/Inconsolata-Regular",null,null,ttf);
+@include font-face("GothicRegular", "../../fonts/GOTHIC", null, null, ttf);
+@include font-face("Monterey", "../../fonts/monterey/MontereyFLF", null, null, ttf);
+@include font-face("Titillium", "../../fonts/titillium-web/TitilliumWeb-Regular", null, null, ttf);
+@include font-face("consola", "../../fonts/inconsolata/Inconsolata-Regular", null, null, ttf);
 
-h1,h2,h3,
-.h1,.h2,.h3{
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
   font-weight: bold !important;
   color: $black;
-  &.white{
+
+  &.white {
     color: $white !important;
   }
 }
 
-h4,h5,h6,
-.h4,.h5,.h6{
+h4,
+h5,
+h6,
+.h4,
+.h5,
+.h6 {
   font-weight: normal !important;
   color: $black;
-  &.white{
+
+  &.white {
     color: $white !important;
   }
 }
 
-.page-title{
+.page-title {
   font-size: 2.5rem;
   margin: 0;
+
   @media screen and (max-width: 768px) {
     font-size: 1.5rem;
+
     @media screen and (max-width: 576px) {
       font-size: 1rem;
-      
+
     }
-    
+
   }
 }
 
@@ -87,9 +99,11 @@ h4,h5,h6,
   margin-top: 30px;
   margin-left: 8px;
 }
+
 .site-slogan {
   font-family: "consola";
   font-size: 14px;
+
   a {
     color: $black;
   }
@@ -103,39 +117,70 @@ h4,h5,h6,
   line-height: 1.3em;
 }
 
-.site-title{
+.site-title {
   font-family: "consola";
 }
 
-.message-result{
+.message-result {
   color: $skyblue;
 }
-.mensaje-error{
+
+.mensaje-error {
   color: $red;
   font-size: 12px;
 }
 
-.title-text{
+.title-text {
   margin-top: 1%;
   margin-bottom: 2%;
 }
 
-.text-end{
+.text-end {
   text-align: end;
 }
 
-.text-start{
+.text-start {
   text-align: start;
 }
 
-.viewPassword{
-  
+.viewPassword {
+
   &::before {
     font-size: large;
-    color:$main-color;
+    color: $main-color;
   }
 }
 
 .text-muted {
   color: $gray !important;
+}
+
+.image-container {
+  cursor: pointer;
+  position: relative;
+
+  img {
+    transition: all 0.5s;
+  }
+  h1{
+    transition: all 0.5s;
+    color: black;
+  }
+
+  .image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  &:hover {
+    h1{
+      color: white;
+    }
+    img {
+      filter: grayscale(100%) blur(2px) brightness(40%);
+    }
+  }
 }

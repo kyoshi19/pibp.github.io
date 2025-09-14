@@ -42,7 +42,7 @@
   </div>
 
   <!-- Horario y siguenos -->
-  <div class="row image-box schedule-image my-7">
+  <div class="row image-box schedule-image">
 
     <div class="col-sm-12 col-md-6 info-item border-end">
       <img src="src/img/bible-v.jpg" alt="bible image" class="w-75">
@@ -75,85 +75,102 @@
     </div>
   </div>
 
-    <!-- Ofrenda -->
-    <div class="row offerings-section image-box justify-content-center px-0 py-2 px-md-5">
-      <div class="col">
-
-        <div class="row text-center d-md-none">
-          <div class="col-12">
-            <h3 class="mb-2">Sigue colaborando</h3>
-            <h5 class="mb-2">Puedes hacernos llegar tus diezmos y ofrendas a través de nuestras
-              cuentas bancarias a nombre de Primera Iglesia Bautista de Panamá</h5>
+  <!-- Grupos pequeños -->
+  <div class="row my-5 px-5 text-center justify-content-center">
+    <div class="col-md-6 p-4" ng-repeat="group in 'groups' | bgValue track by $index">
+      <div class="row">
+        <div class="col-md-12 border p-0 image-container">
+          <div class="col-md-12 image-overlay">
+            <h1>{{group.name}}</h1>
           </div>
-          <div class="col-6 banking-info">
-
-            <div class="row px-2">
-              <div class="col-md-12">
-                <img class="bank-image mobile" src="src/img/bgeneral.png" alt="logo bgeneral">
-              </div>
-              <div class="col-md-12 account-info mobile">
-                <h6 class="m-0">Banco General</h6>
-                <h6 class="m-0">Cuenta de Ahorros</h6>
-                <h6 class="m-0">04-21-97-236435-6</h6>
-              </div>
-            </div>
-
-          </div>
-          <div class=" col-6 banking-info">
-
-            <div class="row px-2">
-              <div class="col-md-12">
-                <img class="bank-image mobile" src="src/img/banistmo.png" alt="logo bgeneral">
-              </div>
-              <div class="col-md-12 account-info mobile">
-                <h6 class="m-0">Banistmo</h5>
-                  <h6 class="m-0">Cuenta Corriente</h5>
-                    <h6 class="m-0">0100279935</h5>
-              </div>
-            </div>
-
-
+          <div class="col-md-12">
+            <img class="img-fluid" ng-src="{{group.image}}" alt="{{group.name}}">
           </div>
         </div>
-
-        <div class="row text-center d-none d-md-flex justify-content-center">
-          <div class="col-3 banking-info">
-
-            <div class="row">
-              <div class="col-md-12">
-                <img class="bank-image" src="src/img/bgeneral.png" alt="logo bgeneral">
-              </div>
-              <div class="col-md-12 account-info">
-                <h5>Banco General</h5>
-                <h5>Cuenta de Ahorros</h5>
-                <h5>04-21-97-236435-6</h5>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-4">
-            <h1 class="my-4">Sigue colaborando</h1>
-            <h4 class="mb-2">Puedes hacernos llegar tus diezmos y ofrendas a través de nuestras
-              cuentas bancarias a nombre de Primera Iglesia Bautista de Panamá</h4>
-          </div>
-          <div class=" col-3 col-md-3 banking-info">
-
-            <div class="row">
-              <div class="col-md-12">
-                <img class="bank-image" src="src/img/banistmo.png" alt="logo bgeneral">
-              </div>
-              <div class="col-md-12 account-info">
-                <h5>Banistmo</h5>
-                <h5>Cuenta Corriente</h5>
-                <h5>0100279935</h5>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-
       </div>
-    </div>
 
+    </div>
   </div>
+
+  <!-- Ofrenda -->
+  <div class="row offerings-section image-box justify-content-center px-0 py-2 px-md-5">
+    <div class="col">
+
+      <div class="row text-center d-md-none">
+        <div class="col-12">
+          <h3 class="mb-2">Sigue colaborando</h3>
+          <h5 class="mb-2">Puedes hacernos llegar tus diezmos y ofrendas a través de nuestras
+            cuentas bancarias a nombre de Primera Iglesia Bautista de Panamá</h5>
+        </div>
+        <div class="col-6 banking-info">
+
+          <div class="row px-2">
+            <div class="col-md-12">
+              <img class="bank-image mobile" src="src/img/bgeneral.png" alt="logo bgeneral">
+            </div>
+            <div class="col-md-12 account-info mobile">
+              <h6 class="m-0">Banco General</h6>
+              <h6 class="m-0">Cuenta de Ahorros</h6>
+              <h6 class="m-0">04-21-97-236435-6</h6>
+            </div>
+          </div>
+
+        </div>
+        <div class=" col-6 banking-info">
+
+          <div class="row px-2">
+            <div class="col-md-12">
+              <img class="bank-image mobile" src="src/img/banistmo.png" alt="logo bgeneral">
+            </div>
+            <div class="col-md-12 account-info mobile">
+              <h6 class="m-0">Banistmo</h5>
+                <h6 class="m-0">Cuenta Corriente</h5>
+                  <h6 class="m-0">0100279935</h5>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="row text-center d-none d-md-flex justify-content-center">
+        <div class="col-3 banking-info">
+
+          <div class="row">
+            <div class="col-md-12">
+              <img class="bank-image" src="src/img/bgeneral.png" alt="logo bgeneral">
+            </div>
+            <div class="col-md-12 account-info">
+              <h5>Banco General</h5>
+              <h5>Cuenta de Ahorros</h5>
+              <h5>04-21-97-236435-6</h5>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-4">
+          <h1 class="my-4">Sigue colaborando</h1>
+          <h4 class="mb-2">Puedes hacernos llegar tus diezmos y ofrendas a través de nuestras
+            cuentas bancarias a nombre de Primera Iglesia Bautista de Panamá</h4>
+        </div>
+        <div class=" col-3 col-md-3 banking-info">
+
+          <div class="row">
+            <div class="col-md-12">
+              <img class="bank-image" src="src/img/banistmo.png" alt="logo bgeneral">
+            </div>
+            <div class="col-md-12 account-info">
+              <h5>Banistmo</h5>
+              <h5>Cuenta Corriente</h5>
+              <h5>0100279935</h5>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

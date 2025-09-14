@@ -502,23 +502,39 @@ body {
   font-family: "consola";
   src: url("../../fonts/inconsolata/Inconsolata-Regular.ttf") format("truetype");
 }
-h1, h2, h3,
-.h1, .h2, .h3 {
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
   font-weight: bold !important;
   color: #000;
 }
-h1.white, h2.white, h3.white,
-.h1.white, .h2.white, .h3.white {
+h1.white,
+h2.white,
+h3.white,
+.h1.white,
+.h2.white,
+.h3.white {
   color: #ffffff !important;
 }
 
-h4, h5, h6,
-.h4, .h5, .h6 {
+h4,
+h5,
+h6,
+.h4,
+.h5,
+.h6 {
   font-weight: normal !important;
   color: #000;
 }
-h4.white, h5.white, h6.white,
-.h4.white, .h5.white, .h6.white {
+h4.white,
+h5.white,
+h6.white,
+.h4.white,
+.h5.white,
+.h6.white {
   color: #ffffff !important;
 }
 
@@ -591,6 +607,31 @@ h4.white, h5.white, h6.white,
 
 .text-muted {
   color: #586770 !important;
+}
+
+.image-container {
+  cursor: pointer;
+  position: relative;
+}
+.image-container img {
+  transition: all 0.5s;
+}
+.image-container h1 {
+  transition: all 0.5s;
+  color: black;
+}
+.image-container .image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.image-container:hover h1 {
+  color: white;
+}
+.image-container:hover img {
+  filter: grayscale(100%) blur(2px) brightness(40%);
 }
 
 .media-player {
