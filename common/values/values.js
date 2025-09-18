@@ -115,7 +115,8 @@
           { title: "Sobre Jesucristo", content: "Creemos que Cristo, el Hijo unigénito de Dios, murió en la cruz por nuestros pecados, fue sepultado, resucitó al tercer día y ascendió a la diestra de Dios para interceder por nosotros. Creemos que Cristo vendrá otra vez de acuerdo con su promesa." },
           { title: "Sobre El Espíritu Santo", content: "Creemos que el Espíritu Santo es la tercera persona de la Trinidad, quien convence de pecado, regenera, ilumina, reviste de poder, sella, consuela, y guía a los creyentes." },
           { title: "Sobre la salvación", content: "Creemos que la salvación es por gracia por medio de la fe, y no depende de obras buenas que el hombre puede hacer. Los dos requisitos indispensables para la salvación son el arrepentimiento y la fe." },
-          { title: "Sobre la iglesia", content: "Creemos que una iglesia verdadera de cristianos es una asamblea de creyentes en Cristo bautizados después de una profesión de fe, comprometidos en mantener las ordenanzas del bautismo (por inmersión) y la cena del Señor conforme a las Escrituras. Reconociendo a Cristo como la única cabeza, tomando la Biblia como su única regla de fe y práctica." }
+          { title: "Sobre la iglesia", content: "Creemos que una iglesia verdadera de cristianos es una asamblea de creyentes en Cristo bautizados después de una profesión de fe, comprometidos en mantener las ordenanzas del bautismo (por inmersión) y la cena del Señor conforme a las Escrituras. Reconociendo a Cristo como la única cabeza, tomando la Biblia como su única regla de fe y práctica." },
+          { title: "Sobre la eternidad", content: "Creemos en la resurrección de los muertos, en la vida eterna para los salvos y en el castigo eterno para los perdidos." }
         ]
       })
     ;
