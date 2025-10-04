@@ -12,30 +12,40 @@
       </h1>
     </div>
 
-    <div class="d-grid col-12 col-md-4 mx-auto mt-4" ng-repeat="cread in creads.declarations">
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#creadModal{{$index}}"
-        >
-        {{cread.title}}
-      </button>
-      <!-- Modal -->
-      <div class="modal fade" id="creadModal{{$index}}" tabindex="-1"
-        aria-labelledby="modalLabel{{$index}}" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header p-2">
-              <div class="col-12 text-center">
-                <h5 class="modal-title">{{cread.title}}</h5>
+    <div class="row">
+      <div class="col-8 offset-2">
+        <div class="row">
+
+          <div class="d-grid col-12 col-md-4 mx-auto my-4 px-5" ng-repeat="cread in creads.declarations">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+              data-bs-target="#creadModal{{$index}}">
+              {{cread.title}}
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="creadModal{{$index}}" tabindex="-1" aria-labelledby="modalLabel{{$index}}"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header p-2">
+                    <div class="col-12 text-center">
+                      <h5 class="modal-title">{{cread.title}}</h5>
+                    </div>
+                  </div>
+                  <div class="modal-body">
+                    {{cread.content}}
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="modal-body">
-              {{cread.content}}
-            </div>
           </div>
+
         </div>
       </div>
-
     </div>
+
+
+
 
   </div>
 </div>
